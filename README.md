@@ -15,6 +15,8 @@ graph LR
     B -- "/battery_status<br/>std_msgs/String" --> C[terminál / rqt / ros2 topic echo]
 ```
 
+![rqt_graph](img/rqt_graph.jpg)
+
 | Topic | Típus | Publisher | Subscriber |
 |---|---|---|---|
 | `/battery_state` | `sensor_msgs/msg/BatteryState` | `battery_sim_node` | `battery_monitor_node` |
@@ -94,3 +96,5 @@ data: 'WARNING: 28.1 % (10.01 V)'
 ...
 data: 'CRITICAL: 13.9 % (9.50 V)'
 ```
+
+![Futtatás](img/battery_allapotok.jpg)
